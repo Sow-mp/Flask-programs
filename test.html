@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      {% block title %}My feedback site{% enblock %}
+    </title>
+    <style>
+      body{padding:20px,background-color:red}
+      main{
+      background:white,padding:10px}
+        header,footer{background:red,padding:10px,color:white}
+        nav,a{margin:0 10px,color:white}
+    </style>
+</head>
+<body>
+<header>
+    <h1>Feedback page</h1>
+    <nav>
+        <a href="/feedback">feedback</a>
+    </nav>
+</header>
+<main>
+    {% block content%}{% endblock%}
+</main>
+</body>
+</html>
